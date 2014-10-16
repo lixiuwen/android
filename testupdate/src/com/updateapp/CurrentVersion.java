@@ -8,6 +8,7 @@ public class CurrentVersion {
 	public static int getVerCode(Context context){
 		int verCode = -1;
 		try{
+			
 			verCode = context.getPackageManager().getPackageInfo(appPackName, 0).versionCode;	
 		}catch(Exception e){
 			Log.e(TAG, e.getMessage());
